@@ -1,0 +1,79 @@
+@import "variables.scss";
+
+@font-face {
+  font-family: 'AzoSans';
+  src: url('/fonts/AzoSans/AzoSans-Light.woff2') format('woff2'),
+    url('/fonts/AzoSans/AzoSans-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+.leftSection {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  padding-top: 6%;
+
+  // Add a media query to adjust the width
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 40px;
+    line-height: 48.76px;
+    font-weight: 500;
+
+    span {
+      color: $secondary-color;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+    font-family: "AzoSans", sans-serif;
+
+    span {
+      font-weight: 600;
+    }
+  }
+
+  button {
+    width: 271px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 30px;
+    border: none;
+    background-color: $button-color;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $button-hover-color; // Change the background color on hover
+    }
+  }
+
+}
+
+.laptop {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  left: 16%;
+  z-index: -1;
+
+  // Add a media query to adjust the width
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
