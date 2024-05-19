@@ -3,6 +3,7 @@ import { Montserrat } from "next/font/google";
 import "./styles/globals.scss";
 import Header from "./components/Header";
 
+// Load the Montserrat font with specific subsets and weights
 const inter = Montserrat({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {

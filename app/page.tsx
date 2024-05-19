@@ -48,7 +48,7 @@ export default function Home() {
   });
 
   return (
-    <main className="container">
+    <main className={`${styles.mainContainer} container`}>
       <section className={styles.leftSection}>
         <h1 ref={h1Ref}>
           Nous vous <br /> accompagnons <br /> dans votre
@@ -69,9 +69,9 @@ export default function Home() {
         ref={imgRef}
         id="laptop"
         src="/laptop.svg"
-        alt="Laptop"
-        width={5000}
-        height={5000}
+        alt="Laptop pour expansion digitale"
+        width={500}
+        height={500}
         className={styles.laptop}
         priority
       />
